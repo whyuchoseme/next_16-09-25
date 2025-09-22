@@ -1,0 +1,25 @@
+.disabled {
+  width: 2.4rem;
+  height: 2.1rem;
+  opacity: 0.6;
+}
+
+.disabled {
+  background-color: #efefefa9;
+  border-color: #efefef4d;
+}
+
+.filterResetButton {
+  width: 5.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 1.7rem;
+
+  &.active {
+    color: rgb(151, 151, 151);
+  }
+}

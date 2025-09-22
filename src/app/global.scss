@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 16px;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}

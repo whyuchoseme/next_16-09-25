@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  .layoutHeader {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .layoutContent {
+    position: relative;
+    margin-top: 4rem;
+    z-index: 0;
+  }
+
+  .layoutFooter {
+    margin-top: 4rem;
+    z-index: 1;
+  }
+}

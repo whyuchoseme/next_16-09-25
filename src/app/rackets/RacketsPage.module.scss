@@ -1,0 +1,83 @@
+.racketsPage {
+  width: 100%;
+  height: 100%;
+
+  .racketsPage__control {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+    .racketsPageControl__left {
+      width: 100%;
+      height: auto;
+      position: sticky;
+      top: 4.9rem;
+      align-self: start;
+      z-index: 2;
+      padding-left: 5rem;
+
+      .racketsPageControlLeft__title {
+        color: rgb(151, 151, 151);
+        font-size: 1.9rem;
+      }
+
+      .racketsPageControlLeft__filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        padding-top: 2rem;
+        font-size: 1.7rem;
+
+        li {
+          width: 8rem;
+          padding-top: 1.2rem;
+
+          &:has(input:checked) {
+            list-style: disc;
+          }
+
+          label {
+            cursor: pointer;
+            list-style: decimal;
+            input {
+              appearance: none;
+            }
+          }
+        }
+      }
+    }
+
+    .racketsPageControl__right {
+      width: 100%;
+      height: 100%;
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        background-color: white;
+
+        li {
+          list-style: none;
+
+          &.lastItem {
+            &:last-child {
+              grid-column: 2 / 3;
+            }
+          }
+
+          &.lastTwoItems {
+            &:first-child {
+              grid-column: 1 / 2;
+            }
+            &:last-child {
+              grid-column: 3 / 4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
